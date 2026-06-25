@@ -264,69 +264,71 @@ Therefore, there is a need for an intelligent AI-powered system that can analyze
 
 <h2>CORRELATION HEATMAP</h2>
 
-<!-- INSERT HEATMAP SCREENSHOT HERE -->
+<img width="966" height="737" alt="image" src="https://github.com/user-attachments/assets/4dbd002e-189f-43c5-b065-b769b4bfab3d" />
+
 
 <hr>
 
 <h2>CARBON EMISSION DISTRIBUTION</h2>
 
-<!-- INSERT HISTOGRAM SCREENSHOT HERE -->
+<img width="695" height="470" alt="image" src="https://github.com/user-attachments/assets/e417efa5-51b2-49f8-938c-602374247624" />
+
 
 <hr>
 
 <h2>TRANSPORTATION MODE ANALYSIS</h2>
 
-<!-- INSERT BAR CHART SCREENSHOT HERE -->
+<img width="695" height="547" alt="image" src="https://github.com/user-attachments/assets/1d987276-177d-4dce-92b1-a528e617fc90" />
 
 <hr>
 
 <h2>RECYCLING HABIT ANALYSIS</h2>
 
-<!-- INSERT BAR CHART SCREENSHOT HERE -->
+<img width="540" height="393" alt="image" src="https://github.com/user-attachments/assets/eed8046d-9781-474b-835c-0bda6db27934" />
 
 <hr>
 
 <h2>FEATURE IMPORTANCE ANALYSIS</h2>
 
-<!-- INSERT FEATURE IMPORTANCE GRAPH HERE -->
+<img width="1047" height="547" alt="image" src="https://github.com/user-attachments/assets/8c4567c3-bc27-488b-b304-d7e4305d7cfa" />
 
 <hr>
 
 <h2>ELECTRICITY USAGE VS CARBON EMISSIONS</h2>
 
-<!-- INSERT SCATTER PLOT HERE -->
+<img width="1768" height="421" alt="image" src="https://github.com/user-attachments/assets/1dbf3633-0985-4801-98d9-af2ea6c2cc3d" />
 
 <hr>
 
 <h2>MACHINE LEARNING MODEL COMPARISON</h2>
 
-<!-- INSERT MODEL COMPARISON GRAPH HERE -->
+<img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/c4f02be9-69a5-44ee-aed6-a678aa76d248" />
 
 <hr>
 
 <h2>CARBON FOOTPRINT PREDICTION OUTPUT</h2>
 
-<!-- INSERT PREDICTION OUTPUT SCREENSHOT HERE -->
+<img width="1472" height="464" alt="image" src="https://github.com/user-attachments/assets/413cb89a-27a8-4e12-8cbf-c1974b0c3cc4" />
 
 <hr>
 
 <h2>SUSTAINABILITY RECOMMENDATIONS</h2>
 
-<!-- INSERT RECOMMENDATION SCREENSHOT HERE -->
+<img width="1698" height="445" alt="image" src="https://github.com/user-attachments/assets/963c560a-17af-4bce-8580-4f014f63feb3" />
 
 <hr>
 
 <h2>DASHBOARD INTERFACE</h2>
 
-<!-- INSERT DASHBOARD SCREENSHOT 1 HERE -->
+<img width="942" height="476" alt="image" src="https://github.com/user-attachments/assets/a9891718-d94b-49d7-aa26-e38616a7c693" />
 
 <hr>
 
-<!-- INSERT DASHBOARD SCREENSHOT 2 HERE -->
+<img width="1919" height="1011" alt="image" src="https://github.com/user-attachments/assets/dcbbc5a1-9347-4a77-8ac3-125d19df863b" />
 
 <hr>
 
-<!-- INSERT DASHBOARD SCREENSHOT 3 HERE -->
+<img width="1554" height="436" alt="image" src="https://github.com/user-attachments/assets/399be668-05b0-4aec-a2b4-315aafd526f5" />
 
 <hr>
 
