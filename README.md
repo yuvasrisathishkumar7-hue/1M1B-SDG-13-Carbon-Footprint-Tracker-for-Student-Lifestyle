@@ -3,6 +3,11 @@
 <hr>
 
 <h2>DEMO LINK</h2> - https://yuvasrisathishkumar7-hue.github.io/1M1B-SDG-13-YUVASRI/UI%20DESIGN/AT.HTML
+
+
+
+<h2>PPT LINK</h2>
+- https://docs.google.com/presentation/d/1IWFSkW7q9bJCPSZNGpcMNQZtmikNtcDN/edit?usp=sharing&ouid=112542326404007571040&rtpof=true&sd=true
 <hr>
 <h2>PROJECT OVERVIEW</h2>
 
