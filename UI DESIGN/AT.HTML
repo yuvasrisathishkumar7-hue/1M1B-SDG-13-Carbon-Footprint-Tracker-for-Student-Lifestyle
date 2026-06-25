@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carbon Footprint Tracker for Student Lifestyle Using AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="ATT.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!-- LOGIN MODAL -->
+
+<div id="loginModal" class="login-modal">
+<div class="login-card">
+
+<h2>🌱 Carbon AI Login</h2>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p id="loginMsg"></p>
+
+</div>
+</div>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+🌱 Carbon AI
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#overview">Overview</a></li>
+
+<li><a href="#tracker">Tracker</a></li>
+
+<li><a href="#dashboard">Dashboard</a></li>
+
+<li><a href="#sdg">SDGs</a></li>
+
+<li><a href="#about">About</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<h1>
+Carbon Footprint Tracker
+</h1>
+
+<h2>
+for Student Lifestyle Using AI
+</h2>
+
+<p>
+AI Powered Sustainability Analysis and Carbon Emission Prediction
+</p>
+
+<a href="#tracker" class="btn">
+Start Analysis
+</a>
+
+</div>
+
+</section>
+
+<!-- OVERVIEW -->
+
+<section id="overview">
+
+<h2 class="section-title">
+Project Overview
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🌍 SDG 13</h3>
+<p>Climate Action through AI-driven sustainability insights.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Prediction</h3>
+<p>Predict student carbon emissions using Machine Learning.</p>
+</div>
+
+<div class="card">
+<h3>📊 Analytics</h3>
+<p>Visualize lifestyle impact using smart dashboards.</p>
+</div>
+
+<div class="card">
+<h3>♻ Sustainability</h3>
+<p>Receive personalized eco-friendly recommendations.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STUDENT DETAILS -->
+
+<section id="tracker">
+
+<h2 class="section-title">
+Student Information
+</h2>
+
+<div class="form-container">
+
+<div class="form-group">
+<label>Student Name</label>
+<input type="text" id="name">
+</div>
+
+<div class="form-group">
+<label>Age</label>
+<input type="number" id="age">
+</div>
+
+<div class="form-group">
+<label>Gender</label>
+<select id="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>College Name</label>
+<input type="text" id="college">
+</div>
+
+</div>
+
+</section>
+
+<!-- LIFESTYLE FORM -->
+
+<section>
+
+<h2 class="section-title">
+Lifestyle Data Collection
+</h2>
+
+<div class="form-container">
+
+<div class="form-group">
+<label>Transportation Mode</label>
+<select id="transport">
+<option value="5">Walking</option>
+<option value="10">Bicycle</option>
+<option value="25">Bus</option>
+<option value="35">Train</option>
+<option value="60">Car</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Food Type</label>
+<select id="food">
+<option value="8">Vegan</option>
+<option value="15">Vegetarian</option>
+<option value="35">Mixed</option>
+<option value="55">Non-Vegetarian</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Housing Type</label>
+<select id="housing">
+<option value="20">Hostel</option>
+<option value="35">Apartment</option>
+<option value="50">Independent House</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Electricity Usage (kWh)</label>
+<input type="number" id="electricity">
+</div>
+
+<div class="form-group">
+<label>Water Usage (Litres)</label>
+<input type="number" id="water">
+</div>
+
+<div class="form-group">
+<label>Monthly Spending (₹)</label>
+<input type="number" id="spending">
+</div>
+
+<div class="form-group">
+<label>Recycling Habit</label>
+<select id="recycle">
+<option value="5">Always</option>
+<option value="15">Sometimes</option>
+<option value="30">Never</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Travel Distance per Month (km)</label>
+<input type="number" id="travel">
+</div>
+
+<div class="form-group">
+<label>Internet Usage (hours/day)</label>
+<input type="number" id="internet">
+</div>
+
+<button class="predict-btn" onclick="predictCarbon()">
+Generate AI Prediction
+</button>
+
+</div>
+
+</section>
+
+<!-- RESULT -->
+
+<section>
+
+<h2 class="section-title">
+AI Prediction Result
+</h2>
+
+<div class="result-box">
+
+<h3>Estimated Carbon Emission</h3>
+
+<div class="score" id="carbonScore">
+0 kg CO₂
+</div>
+
+<h3 id="impactStatus">
+Waiting...
+</h3>
+
+<p id="sustainabilityScore">
+Sustainability Score: 0/100
+</p>
+
+</div>
+
+</section>
+
+<!-- AI INSIGHTS -->
+
+<section>
+
+<h2 class="section-title">
+AI Insights
+</h2>
+
+<div class="insight-box">
+
+<ul id="insights">
+
+<li>Transportation Contribution</li>
+
+<li>Food Consumption Impact</li>
+
+<li>Energy Usage Analysis</li>
+
+<li>Water Usage Analysis</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- RECOMMENDATIONS -->
+
+<section>
+
+<h2 class="section-title">
+AI Sustainability Recommendations
+</h2>
+
+<div class="card-grid">
+
+<div class="recommend-card">
+✔ Use Public Transportation
+</div>
+
+<div class="recommend-card">
+✔ Save Electricity
+</div>
+
+<div class="recommend-card">
+✔ Reduce Water Consumption
+</div>
+
+<div class="recommend-card">
+✔ Practice Recycling
+</div>
+
+</div>
+
+</section>
+
+<!-- CARBON METER -->
+
+<section>
+
+<h2 class="section-title">
+Carbon Meter
+</h2>
+
+<div class="meter-container">
+
+<div class="meter-bar">
+
+<div class="meter-fill" id="meterFill"></div>
+
+</div>
+
+<p id="meterValue">
+0 kg CO₂
+</p>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section id="dashboard">
+
+<h2 class="section-title">
+Carbon Analytics Dashboard
+</h2>
+
+<div class="chart-grid">
+
+<div class="chart-card">
+<canvas id="pieChart"></canvas>
+</div>
+
+<div class="chart-card">
+<canvas id="barChart"></canvas>
+</div>
+
+</div>
+
+</section>
+
+<!-- GOALS -->
+
+<section>
+
+<h2 class="section-title">
+Carbon Reduction Goals
+</h2>
+
+<div class="goal-card">
+
+<p>Goal: 200 kg CO₂</p>
+
+<div class="progress">
+
+<div class="progress-fill" id="goalProgress"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SDGs -->
+
+<section id="sdg">
+
+<h2 class="section-title">
+Supported Sustainable Development Goals
+</h2>
+
+<div class="card-grid">
+
+<div class="sdg-card">
+<h3>🌍 SDG 13</h3>
+<p>Climate Action</p>
+</div>
+
+<div class="sdg-card">
+<h3>♻ SDG 12</h3>
+<p>Responsible Consumption</p>
+</div>
+
+<div class="sdg-card">
+<h3>🏙 SDG 11</h3>
+<p>Sustainable Cities</p>
+</div>
+
+<div class="sdg-card">
+<h3>📚 SDG 4</h3>
+<p>Quality Education</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- REPORT -->
+
+<section>
+
+<h2 class="section-title">
+Generate Report
+</h2>
+
+<div class="report-section">
+
+<button class="download-btn" onclick="downloadReport()">
+Download PDF Report
+</button>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">
+About Project
+</h2>
+
+<div class="about-box">
+
+<h3>
+Carbon Footprint Tracker for Student Lifestyle Using AI
+</h3>
+
+<p>
+Developed by: Yuvasri S
+</p>
+
+<p>
+Internship: 1M1B – IBM SkillsBuild AI for Sustainability
+</p>
+
+<p>
+Technologies:
+HTML, CSS, JavaScript, Python,
+Random Forest Regressor, Google Colab
+</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>
+Carbon Footprint Tracker for Student Lifestyle Using AI
+</h3>
+
+<p>
+Developed by Yuvasri S
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+<script src="ATTT.js"></script>
+
+</body>
+</html>
